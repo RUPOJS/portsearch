@@ -103,7 +103,6 @@ class Search extends Component {
 	};
 
 	render() {
-	  console.log('Rendering starts now');
 	  return (
 		  <div>
 		    <Header />
