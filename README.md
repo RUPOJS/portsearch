@@ -1,13 +1,5 @@
 # My First Xeneta
 
-We are providing a simplified real-world usage scenario of a core
-Xeneta feature. In our system, users are given the option to search
-for origin and destination ports by name, and see a visualisation of
-the price development over a selected period of time. We provide a
-small backend with three API endpoints that return port information,
-do a simple string search, or return the time-series information about
-the prices. Your task is to develop an interface for the actions
-described below.
 
 
 
@@ -15,24 +7,20 @@ described below.
 
 ```sh
 # Install dependencies
-$ npm install
+$ yarn install
 # Single build
-$ npm run build
+$ yarn build
 # Watcher build (Rebuilds on file changes)
-$ npm run watch
+$ yarn watch
 # Start development server at localhost:3000
-$ npm start
+$ yarn start
 ```
+ 
+# TODO
 
-# Task
-Create a simple port-to-port search page, with visualization of the freight rates over time, on a provided port-port
-combination, within a customizable date range.
-
-* Make it pretty-ish, using your awesome CSS skills
-* Make it efficient, limit network use, and load fast
-* Feel free to add your personal flair
-
-Please read the full document for the details on the build process and the APIs. 
+* Rewrite the autocomplete using Trie data structure for faster lookup and auto-completeion.
+* Use my own datepicker library `goDatePicker` for DatePicker functionality, due to short time, couldn't use it. https://github.com/RUPOJS/goDatepicker 
+* Test-coverage
 
 # Building
 The project will build HTML using EJS templates from the `views` folder. Client-side JavaScript is built
@@ -64,7 +52,6 @@ Free text search for port codes and port names. Returns an object with matching 
 ## /api/rates/:origin/:destination/:fromdate/:todate
 Returns a timeseries of rates from port to port, within the given time-period. `origin` and `destination`
 are port codes, the date formats are ISO-8601 dates, e.g. `2018-06-30`.
-https://github.com/xeneta/portsearchtask
 This returns an object containing a time-series of freight rates. The time-series is an array of arrays,
 containing the date and the price for that given day.
 

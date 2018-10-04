@@ -6,4 +6,8 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'My First Xeneta' });
 });
 
+router.get('/search', function(req, res, next) {
+  res.render('index', { title: 'My First Xeneta' });
+});
+
 module.exports = router;
