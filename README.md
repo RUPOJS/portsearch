@@ -62,6 +62,3 @@ containing the date and the price for that given day.
 
 Note that the dataset only contains data between `2017-08-30` and `2018-06-30`. If there is no rate available
 on a specific date within the dataset, the price is set to `null`.
-
-# Evaluation
-When evaluating the code, we will install dependencies, run a single build, then start the development server.
