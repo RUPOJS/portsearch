@@ -18,7 +18,7 @@ $ yarn start
  
 # TODO
 
-* Rewrite the autocomplete using Trie data structure for faster lookup and auto-completeion.
+* Rewrite the autocomplete using Trie data structure for faster lookup and auto-completion.
 * Use my own datepicker library `goDatePicker` for DatePicker functionality, due to short time, couldn't use it. https://github.com/RUPOJS/goDatepicker 
 * Test-coverage
 
